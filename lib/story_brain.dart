@@ -72,7 +72,7 @@ class StoryBrain {
   }
 
   bool buttonShouldBeVisible() {
-    if (_storyNumber == 1 || _storyNumber == 2 || _storyNumber == 3)
+    if (_storyNumber == 0 || _storyNumber == 1 || _storyNumber == 2)
       return true;
     return false;
   }
