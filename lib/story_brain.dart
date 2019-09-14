@@ -51,7 +51,24 @@ class StoryBrain {
 
   int storyNumber = 0;
 
-  void nextStory(int choiceNumber) {}
+  void nextStory(int choiceNumber) {
+    if (storyNumber == 0) {
+      if (choiceNumber == 1)
+        storyNumber = 2;
+      else
+        storyNumber = 1;
+    } else if (storyNumber == 1) {
+      if (choiceNumber == 1)
+        storyNumber = 2;
+      else
+        storyNumber = 3;
+    } else if (storyNumber == 2) {
+      if (choiceNumber == 1)
+        storyNumber = 5;
+      else
+        storyNumber = 4;
+    }
+  }
 
 //TODO: Step 21 - Using the story plan, update nextStory() to change the storyNumber depending on the choice made by the user. e.g. if choiceNumber was equal to 1 and the storyNumber is 0, the storyNumber should become 2.
 
